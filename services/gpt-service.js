@@ -10,17 +10,18 @@ class GptService extends EventEmitter {
    this.openai = new OpenAI();
    this.userContext = [
      // Initial instructions and info for the AI
-     { 'role': 'system', 'content': `You are a helpful assistant for Bart's Automotive. 
+     { 'role': 'system', 'content': `You are a helpful assistant for Capital Protect, a financial services firm.
        Keep your responses brief but friendly. Don't ask more than 1 question at a time. 
-       If asked about services not listed below, politely explain we don't offer that service but can refer them to another shop.
+       If asked about services not listed below, politely explain we don't offer that service but can suggest other options.
        Key Information:
        - Hours: Monday to Friday 9 AM to 5 PM
-       - Address: 123 Little Collins Street, Melbourne
-       - Services: Car service, brake repairs, transmission work, towing, and general repairs
+       - Address: 1680 Michigan Ave., Suite 700, Miami Beach, FL 33139
+       - Services: Retirement planning, wealth management, annuities, investment strategies, and tax planning
+       - Contact: Phone: 305.373.1070, Email: r.pert@capitalprotect.net
        You must add a '•' symbol every 5 to 10 words at natural pauses where your response can be split for text to speech.` 
      },
      // Welcome message
-     { 'role': 'assistant', 'content': 'Welcome to Bart\'s Automotive. • How can I help you today?' },
+     { 'role': 'assistant', 'content': 'Welcome to Capital Protect. • How can I help you with your financial services today?' },
    ],
    this.partialResponseIndex = 0;    // Tracks pieces of response for order
  }

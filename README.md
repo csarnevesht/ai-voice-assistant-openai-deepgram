@@ -61,7 +61,7 @@ The system is built with a modular architecture:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Barty-Bart/ai-voice-assistant-openai-deepgram.git
+git clone https://github.com/ai-voice-assistant-openai-deepgram.git
 cd ai-voice-assistant-openai-deepgram
 ```
 
@@ -105,6 +105,12 @@ npm start
    - Natural conversation handling
    - Interruption detection
    - Ordered message queuing
+   
+4. **Capital Protect Adaptation**:
+   - Customized to provide financial services information
+   - Retirement planning, wealth management, annuities assistance
+   - Contact and appointment scheduling capabilities
+   - Miami, FL location and contact details integration
 
 ## Future Improvements
 
